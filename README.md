@@ -1,14 +1,17 @@
 # Robot State Simulator
 
-This project simulates the movement of a robot within a defined grid. The robot can rotate left (`L`), rotate right (`R`), or move forward (`M`) based on a given sequence of operations. The robot's position and direction are updated accordingly, and the final state is printed.
+This Java program simulates the movement of a robot within a bounded grid. The robot can rotate left (`L`), rotate right (`R`), or move forward based on a sequence of commands. The final state of the robot (coordinates and direction) is printed after processing the input instructions.
 
-## Components
+## Assumptions
 
-- `State`: Defines the current state of the robot including position and direction.
-- `MaxHomeAssignment`: Main class to read input, process movements, and display output.
+- **Invalid Operation**:  
+  If any character in the command sequence is not `'L'`, `'R'`, or `'M'`, the program throws an `IllegalArgumentException`.
+
+- **Out of Bounds**:  
+  If a move causes the robot to cross the grid boundary, the program throws an `IllegalStateException`.
 
 ## How to Compile and Run
 
 ```bash
-javac MaxHomeAssignment.java
+javac assignment.java
 java MaxHomeAssignment
