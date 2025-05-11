@@ -4,14 +4,16 @@ This Java program simulates the movement of a robot within a bounded grid. The r
 
 ## Assumptions
 
-- **Invalid Operation**:  
+- **Invalid Operation**:
   If any character in the command sequence is not `'L'`, `'R'`, or `'M'`, the program throws an `IllegalArgumentException`.
 
-- **Out of Bounds**:  
+- **Out of Bounds**:
   If a move causes the robot to cross the grid boundary, the program throws an `IllegalStateException`.
 
 ## How to Compile and Run
 
 ```bash
-javac assignment.java
+git clone https://github.com/nunemunthalashiva/MaxHomeAssignment.git
+cd MaxHomeAssignment
+javac MaxHomeAssignment.java
 java MaxHomeAssignment
